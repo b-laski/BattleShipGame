@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C20808E01FDDB34B002C6CEA /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20808DF1FDDB34B002C6CEA /* Game.swift */; };
+		C20808E21FDDB5BE002C6CEA /* BattleField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20808E11FDDB5BE002C6CEA /* BattleField.swift */; };
+		C20808E41FDDB5D4002C6CEA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20808E31FDDB5D4002C6CEA /* Player.swift */; };
+		C20808E91FDDC5FE002C6CEA /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20808E81FDDC5FE002C6CEA /* Status.swift */; };
+		C20808EB1FDDDE5E002C6CEA /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20808EA1FDDDE5E002C6CEA /* Field.swift */; };
+		C20EA8E41FDD7CF200D8B3FF /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20EA8E31FDD7CF200D8B3FF /* Helpers.swift */; };
+		C20EA8EF1FDDA23F00D8B3FF /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20EA8ED1FDDA23F00D8B3FF /* MainWindowController.swift */; };
+		C233588A1FE023C3005C3DAF /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23358891FE023C3005C3DAF /* Ship.swift */; };
+		C2411E201FD6FB38006085CA /* SettingsControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2411E1F1FD6FB38006085CA /* SettingsControllers.swift */; };
+		C25A41A11FE1EB2000466E06 /* PlayerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25A41A01FE1EB2000466E06 /* PlayerType.swift */; };
+		C2D6B8611FE1B764004B1FE6 /* Ships.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D6B8601FE1B764004B1FE6 /* Ships.swift */; };
+		EEC8D3421FCF36980076EB4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC8D3411FCF36980076EB4E /* AppDelegate.swift */; };
+		EEC8D3441FCF36980076EB4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC8D3431FCF36980076EB4E /* ViewController.swift */; };
+		EEC8D3461FCF36980076EB4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC8D3451FCF36980076EB4E /* Assets.xcassets */; };
+		EEC8D3491FCF36980076EB4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEC8D3471FCF36980076EB4E /* Main.storyboard */; };
+		EEC8D3551FCF36980076EB4E /* BattleShip_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC8D3541FCF36980076EB4E /* BattleShip_GameTests.swift */; };
+		EEC8D3601FCF36980076EB4E /* BattleShip_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC8D35F1FCF36980076EB4E /* BattleShip_GameUITests.swift */; };
+		EEC8D36F1FCF37650076EB4E /* BATTLESHIP-600x338.png in Resources */ = {isa = PBXBuildFile; fileRef = EEC8D36E1FCF37650076EB4E /* BATTLESHIP-600x338.png */; };
+		EEC8D3761FCF38760076EB4E /* ExitControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC8D3751FCF38760076EB4E /* ExitControllers.swift */; };
+		EEC8D3791FCF3A6F0076EB4E /* GameWindowsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC8D3771FCF3A6F0076EB4E /* GameWindowsController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EEC8D3511FCF36980076EB4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEC8D3361FCF36980076EB4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEC8D33D1FCF36980076EB4E;
+			remoteInfo = "BattleShip Game";
+		};
+		EEC8D35C1FCF36980076EB4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEC8D3361FCF36980076EB4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEC8D33D1FCF36980076EB4E;
+			remoteInfo = "BattleShip Game";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C20808DF1FDDB34B002C6CEA /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		C20808E11FDDB5BE002C6CEA /* BattleField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleField.swift; sourceTree = "<group>"; };
+		C20808E31FDDB5D4002C6CEA /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		C20808E81FDDC5FE002C6CEA /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		C20808EA1FDDDE5E002C6CEA /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		C20EA8E31FDD7CF200D8B3FF /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		C20EA8ED1FDDA23F00D8B3FF /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		C23358891FE023C3005C3DAF /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
+		C2411E1F1FD6FB38006085CA /* SettingsControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsControllers.swift; sourceTree = "<group>"; };
+		C25A41A01FE1EB2000466E06 /* PlayerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerType.swift; sourceTree = "<group>"; };
+		C2D6B8601FE1B764004B1FE6 /* Ships.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ships.swift; sourceTree = "<group>"; };
+		EEC8D33E1FCF36980076EB4E /* BattleShip Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BattleShip Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEC8D3411FCF36980076EB4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EEC8D3431FCF36980076EB4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EEC8D3451FCF36980076EB4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEC8D3481FCF36980076EB4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EEC8D34A1FCF36980076EB4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEC8D34B1FCF36980076EB4E /* BattleShip_Game.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BattleShip_Game.entitlements; sourceTree = "<group>"; };
+		EEC8D3501FCF36980076EB4E /* BattleShip GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BattleShip GameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEC8D3541FCF36980076EB4E /* BattleShip_GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleShip_GameTests.swift; sourceTree = "<group>"; };
+		EEC8D3561FCF36980076EB4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEC8D35B1FCF36980076EB4E /* BattleShip GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BattleShip GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEC8D35F1FCF36980076EB4E /* BattleShip_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleShip_GameUITests.swift; sourceTree = "<group>"; };
+		EEC8D3611FCF36980076EB4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEC8D36E1FCF37650076EB4E /* BATTLESHIP-600x338.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BATTLESHIP-600x338.png"; sourceTree = "<group>"; };
+		EEC8D3751FCF38760076EB4E /* ExitControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitControllers.swift; sourceTree = "<group>"; };
+		EEC8D3771FCF3A6F0076EB4E /* GameWindowsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWindowsController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEC8D33B1FCF36980076EB4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEC8D34D1FCF36980076EB4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEC8D3581FCF36980076EB4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C20808E71FDDC5F2002C6CEA /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				C20808E81FDDC5FE002C6CEA /* Status.swift */,
+				C20808EA1FDDDE5E002C6CEA /* Field.swift */,
+				C23358891FE023C3005C3DAF /* Ship.swift */,
+				C25A41A01FE1EB2000466E06 /* PlayerType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		C20EA8E21FDD7CDD00D8B3FF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C20EA8E31FDD7CF200D8B3FF /* Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C2411E1E1FD6F649006085CA /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				C20808DF1FDDB34B002C6CEA /* Game.swift */,
+				C20808E11FDDB5BE002C6CEA /* BattleField.swift */,
+				C20808E31FDDB5D4002C6CEA /* Player.swift */,
+				C2D6B8601FE1B764004B1FE6 /* Ships.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		EEC8D3351FCF36980076EB4E = {
+			isa = PBXGroup;
+			children = (
+				EEC8D3401FCF36980076EB4E /* BattleShip Game */,
+				EEC8D3531FCF36980076EB4E /* BattleShip GameTests */,
+				EEC8D35E1FCF36980076EB4E /* BattleShip GameUITests */,
+				EEC8D33F1FCF36980076EB4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EEC8D33F1FCF36980076EB4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEC8D33E1FCF36980076EB4E /* BattleShip Game.app */,
+				EEC8D3501FCF36980076EB4E /* BattleShip GameTests.xctest */,
+				EEC8D35B1FCF36980076EB4E /* BattleShip GameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEC8D3401FCF36980076EB4E /* BattleShip Game */ = {
+			isa = PBXGroup;
+			children = (
+				C20808E71FDDC5F2002C6CEA /* Enums */,
+				C20EA8E21FDD7CDD00D8B3FF /* Helpers */,
+				C2411E1E1FD6F649006085CA /* Game */,
+				EEC8D3701FCF382D0076EB4E /* Controllers */,
+				EEC8D36D1FCF375B0076EB4E /* Image */,
+				EEC8D3411FCF36980076EB4E /* AppDelegate.swift */,
+				EEC8D3431FCF36980076EB4E /* ViewController.swift */,
+				EEC8D3451FCF36980076EB4E /* Assets.xcassets */,
+				EEC8D3471FCF36980076EB4E /* Main.storyboard */,
+				EEC8D34A1FCF36980076EB4E /* Info.plist */,
+				EEC8D34B1FCF36980076EB4E /* BattleShip_Game.entitlements */,
+			);
+			path = "BattleShip Game";
+			sourceTree = "<group>";
+		};
+		EEC8D3531FCF36980076EB4E /* BattleShip GameTests */ = {
+			isa = PBXGroup;
+			children = (
+				EEC8D3541FCF36980076EB4E /* BattleShip_GameTests.swift */,
+				EEC8D3561FCF36980076EB4E /* Info.plist */,
+			);
+			path = "BattleShip GameTests";
+			sourceTree = "<group>";
+		};
+		EEC8D35E1FCF36980076EB4E /* BattleShip GameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EEC8D35F1FCF36980076EB4E /* BattleShip_GameUITests.swift */,
+				EEC8D3611FCF36980076EB4E /* Info.plist */,
+			);
+			path = "BattleShip GameUITests";
+			sourceTree = "<group>";
+		};
+		EEC8D36D1FCF375B0076EB4E /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				EEC8D36E1FCF37650076EB4E /* BATTLESHIP-600x338.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		EEC8D3701FCF382D0076EB4E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EEC8D3751FCF38760076EB4E /* ExitControllers.swift */,
+				EEC8D3771FCF3A6F0076EB4E /* GameWindowsController.swift */,
+				C2411E1F1FD6FB38006085CA /* SettingsControllers.swift */,
+				C20EA8ED1FDDA23F00D8B3FF /* MainWindowController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEC8D33D1FCF36980076EB4E /* BattleShip Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEC8D3641FCF36980076EB4E /* Build configuration list for PBXNativeTarget "BattleShip Game" */;
+			buildPhases = (
+				EEC8D33A1FCF36980076EB4E /* Sources */,
+				EEC8D33B1FCF36980076EB4E /* Frameworks */,
+				EEC8D33C1FCF36980076EB4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BattleShip Game";
+			productName = "BattleShip Game";
+			productReference = EEC8D33E1FCF36980076EB4E /* BattleShip Game.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EEC8D34F1FCF36980076EB4E /* BattleShip GameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEC8D3671FCF36980076EB4E /* Build configuration list for PBXNativeTarget "BattleShip GameTests" */;
+			buildPhases = (
+				EEC8D34C1FCF36980076EB4E /* Sources */,
+				EEC8D34D1FCF36980076EB4E /* Frameworks */,
+				EEC8D34E1FCF36980076EB4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEC8D3521FCF36980076EB4E /* PBXTargetDependency */,
+			);
+			name = "BattleShip GameTests";
+			productName = "BattleShip GameTests";
+			productReference = EEC8D3501FCF36980076EB4E /* BattleShip GameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EEC8D35A1FCF36980076EB4E /* BattleShip GameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEC8D36A1FCF36980076EB4E /* Build configuration list for PBXNativeTarget "BattleShip GameUITests" */;
+			buildPhases = (
+				EEC8D3571FCF36980076EB4E /* Sources */,
+				EEC8D3581FCF36980076EB4E /* Frameworks */,
+				EEC8D3591FCF36980076EB4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEC8D35D1FCF36980076EB4E /* PBXTargetDependency */,
+			);
+			name = "BattleShip GameUITests";
+			productName = "BattleShip GameUITests";
+			productReference = EEC8D35B1FCF36980076EB4E /* BattleShip GameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEC8D3361FCF36980076EB4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Bartłomiej Łaski";
+				TargetAttributes = {
+					EEC8D33D1FCF36980076EB4E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					EEC8D34F1FCF36980076EB4E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EEC8D33D1FCF36980076EB4E;
+					};
+					EEC8D35A1FCF36980076EB4E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EEC8D33D1FCF36980076EB4E;
+					};
+				};
+			};
+			buildConfigurationList = EEC8D3391FCF36980076EB4E /* Build configuration list for PBXProject "BattleShip Game" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEC8D3351FCF36980076EB4E;
+			productRefGroup = EEC8D33F1FCF36980076EB4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEC8D33D1FCF36980076EB4E /* BattleShip Game */,
+				EEC8D34F1FCF36980076EB4E /* BattleShip GameTests */,
+				EEC8D35A1FCF36980076EB4E /* BattleShip GameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEC8D33C1FCF36980076EB4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEC8D3461FCF36980076EB4E /* Assets.xcassets in Resources */,
+				EEC8D36F1FCF37650076EB4E /* BATTLESHIP-600x338.png in Resources */,
+				EEC8D3491FCF36980076EB4E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEC8D34E1FCF36980076EB4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEC8D3591FCF36980076EB4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEC8D33A1FCF36980076EB4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEC8D3441FCF36980076EB4E /* ViewController.swift in Sources */,
+				C20808E21FDDB5BE002C6CEA /* BattleField.swift in Sources */,
+				C20EA8EF1FDDA23F00D8B3FF /* MainWindowController.swift in Sources */,
+				C20EA8E41FDD7CF200D8B3FF /* Helpers.swift in Sources */,
+				C233588A1FE023C3005C3DAF /* Ship.swift in Sources */,
+				C2D6B8611FE1B764004B1FE6 /* Ships.swift in Sources */,
+				EEC8D3421FCF36980076EB4E /* AppDelegate.swift in Sources */,
+				EEC8D3761FCF38760076EB4E /* ExitControllers.swift in Sources */,
+				C20808EB1FDDDE5E002C6CEA /* Field.swift in Sources */,
+				EEC8D3791FCF3A6F0076EB4E /* GameWindowsController.swift in Sources */,
+				C25A41A11FE1EB2000466E06 /* PlayerType.swift in Sources */,
+				C2411E201FD6FB38006085CA /* SettingsControllers.swift in Sources */,
+				C20808E41FDDB5D4002C6CEA /* Player.swift in Sources */,
+				C20808E01FDDB34B002C6CEA /* Game.swift in Sources */,
+				C20808E91FDDC5FE002C6CEA /* Status.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEC8D34C1FCF36980076EB4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEC8D3551FCF36980076EB4E /* BattleShip_GameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEC8D3571FCF36980076EB4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEC8D3601FCF36980076EB4E /* BattleShip_GameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EEC8D3521FCF36980076EB4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEC8D33D1FCF36980076EB4E /* BattleShip Game */;
+			targetProxy = EEC8D3511FCF36980076EB4E /* PBXContainerItemProxy */;
+		};
+		EEC8D35D1FCF36980076EB4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEC8D33D1FCF36980076EB4E /* BattleShip Game */;
+			targetProxy = EEC8D35C1FCF36980076EB4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EEC8D3471FCF36980076EB4E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEC8D3481FCF36980076EB4E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EEC8D3621FCF36980076EB4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EEC8D3631FCF36980076EB4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		EEC8D3651FCF36980076EB4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "BattleShip Game/BattleShip_Game.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "BattleShip Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Tajfun-Enterteimants.BattleShip-Game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		EEC8D3661FCF36980076EB4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "BattleShip Game/BattleShip_Game.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "BattleShip Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Tajfun-Enterteimants.BattleShip-Game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		EEC8D3681FCF36980076EB4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "BattleShip GameTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Tajfun-Enterteimants.BattleShip-GameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BattleShip Game.app/Contents/MacOS/BattleShip Game";
+			};
+			name = Debug;
+		};
+		EEC8D3691FCF36980076EB4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "BattleShip GameTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Tajfun-Enterteimants.BattleShip-GameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BattleShip Game.app/Contents/MacOS/BattleShip Game";
+			};
+			name = Release;
+		};
+		EEC8D36B1FCF36980076EB4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "BattleShip GameUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Tajfun-Enterteimants.BattleShip-GameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "BattleShip Game";
+			};
+			name = Debug;
+		};
+		EEC8D36C1FCF36980076EB4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "BattleShip GameUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Tajfun-Enterteimants.BattleShip-GameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "BattleShip Game";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEC8D3391FCF36980076EB4E /* Build configuration list for PBXProject "BattleShip Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEC8D3621FCF36980076EB4E /* Debug */,
+				EEC8D3631FCF36980076EB4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEC8D3641FCF36980076EB4E /* Build configuration list for PBXNativeTarget "BattleShip Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEC8D3651FCF36980076EB4E /* Debug */,
+				EEC8D3661FCF36980076EB4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEC8D3671FCF36980076EB4E /* Build configuration list for PBXNativeTarget "BattleShip GameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEC8D3681FCF36980076EB4E /* Debug */,
+				EEC8D3691FCF36980076EB4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEC8D36A1FCF36980076EB4E /* Build configuration list for PBXNativeTarget "BattleShip GameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEC8D36B1FCF36980076EB4E /* Debug */,
+				EEC8D36C1FCF36980076EB4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EEC8D3361FCF36980076EB4E /* Project object */;
+}
