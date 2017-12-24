@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class GameWindowsController: NSViewController {
+class GameWindowsController: NSViewController, NSWindowDelegate {
     
     var game: Game? = nil;
     var position: Bool = true;
@@ -174,9 +174,9 @@ class GameWindowsController: NSViewController {
                     for item in 0...3{
                         if(game?.orientation == true){
                             let tag = ((wiersz + item) * UserDefaults.standard.integer(forKey: "FieldSize")) + kolumna ;
-                            Helper.setPositionOfShips(ArrayWithButton: player1Field, tag: tag , kindOfShip: "N")
+                            Helper.setPositionOfShips(ArrayWithButton: player1Field, tag: tag , kindOfShip: "B")
                         } else {
-                            Helper.setPositionOfShips(ArrayWithButton: player1Field, tag: button.tag + item , kindOfShip: "N")
+                            Helper.setPositionOfShips(ArrayWithButton: player1Field, tag: button.tag + item , kindOfShip: "B")
                         }
                     }
                 }
@@ -190,35 +190,43 @@ class GameWindowsController: NSViewController {
         }
         
         if(game?.status == Status.started){
-            if(game?.ShotToField(kolumna: kolumna, wiersz: wiersz))!{
+            if(game?.ShotToField(kolumna: kolumna, wiersz: wiersz, playerType: .PlayerOne))!{
                 Helper.setHitOnShip(ArrayWithButton: player2Field, tag: button.tag)
                 game?.player2.hit();
-                print("player1: \(String(describing: game?.player1.live))!");
+                print("player2: \(String(describing: (game?.player2.live)!))!");
             } else {
                 Helper.setMissOnShip(ArrayWithButton: player2Field, tag: button.tag)
             }
             
-            let fakeTag = Int(arc4random_uniform(UInt32(player1Field.count)))
-            if(game?.BotHit(button: fakeTag) == true){
+            
+            let fakeTag = Helper.checkTag(ArrayWithButton: player1Field)
+            let x: Int = fakeTag % UserDefaults.standard.integer(forKey: "FieldSize");
+            let y: Int = fakeTag / UserDefaults.standard.integer(forKey: "FieldSize");
+            
+            //print("[Wiersz:\(y): Kolumna:\(x)]")
+            if(game?.ShotToField(kolumna: x, wiersz: y, playerType: .PlayerTwo) == true){
                 Helper.setHitOnShip(ArrayWithButton: player1Field, tag: fakeTag)
                 game?.player1.hit();
-                print("player2: \(String(describing: game?.player2.live))!");
+                print("[Player1 Live]: \(String(describing: (game?.player1.live)!))!");
             } else {
                 Helper.setMissOnShip(ArrayWithButton: player1Field, tag: fakeTag)
             }
+            
         }
         
         
-        if(game?.player1.isLive() == true ){
-            game?.status = Status.end
-            _ = Helper.dialogOKCancel(question: "Game is ended", text: "Player 1 won!", buttons: .OK)
-            return
-        } else if (game?.player2.isLive() == true){
+        if(game?.player1.isDead() == true ){
             game?.status = Status.end
             _ = Helper.dialogOKCancel(question: "Game is ended", text: "Player 2 won!", buttons: .OK)
-            return
+            self.view.window?.close();
+        } else if (game?.player2.isDead() == true){
+            game?.status = Status.end
+            _ = Helper.dialogOKCancel(question: "Game is ended", text: "Player 1 won!", buttons: .OK)
+            self.view.window?.close();
         }
     }
+    
+
     
     @objc func selectPosition(button: NSButton){
         if(game?.orientation == true){

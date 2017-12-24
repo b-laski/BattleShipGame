@@ -16,7 +16,7 @@ class Player {
         live = 31;
     }
     
-    func isLive() -> Bool {
+    func isDead() -> Bool {
         if(live <= 0){
             return true
         }

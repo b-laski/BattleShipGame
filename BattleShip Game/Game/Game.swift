@@ -55,20 +55,7 @@ class Game {
         return false;
     }
     
-    func ShotToField(kolumna: Int, wiersz: Int) -> Bool{
-        if(BF.shootToShip(kolumna: kolumna, wiersz: wiersz, playerType: .PlayerOne)){
-            return true;
-        } else {
-            return false;
-        }
-    }
-    
-    func BotHit(button: Int) -> Bool{
-        let kolumna: Int = button % UserDefaults.standard.integer(forKey: "FieldSize");
-        let wiersz: Int = button / UserDefaults.standard.integer(forKey: "FieldSize");
-        if(BF.shootToShip(kolumna: kolumna, wiersz: wiersz, playerType: .PlayerTwo)){
-            return true;
-        }
-        return false;
+    func ShotToField(kolumna: Int, wiersz: Int, playerType: PlayerType) -> Bool{
+        return BF.shootToShip(kolumna: kolumna, wiersz: wiersz, playerType: playerType)
     }
 }

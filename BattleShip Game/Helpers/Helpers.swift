@@ -55,6 +55,16 @@ class Helper {
         }
     }
     
+    static func checkTag(ArrayWithButton: [NSButton]) -> Int{
+        while true {
+            let FakeTag = Int(arc4random_uniform(UInt32(ArrayWithButton.count)))
+            
+            if((ArrayWithButton[FakeTag].cell as! NSButtonCell).backgroundColor != NSColor.darkGray && ArrayWithButton[FakeTag].title != String(format: "%C", 0x274c)){
+                return FakeTag;
+            }
+        }
+    }
+    
     static func setPositionOfShips(ArrayWithButton: [NSButton], tag: Int, kindOfShip: String) -> Void {
         ArrayWithButton[tag].title = kindOfShip;
     }

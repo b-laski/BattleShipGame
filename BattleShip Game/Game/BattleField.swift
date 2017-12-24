@@ -30,7 +30,7 @@ class Battlefield {
             if(addShip(kolumna: kolumna, wiersz: wiersz, position: randomOrientation, shipType: .Fregata, player: .PlayerTwo)){
                 i += 1;
             }
-            print("\(i). Fregata dodana!")
+            //print("\(i). Fregata dodana!")
         }
         i=0;
         let destrojer = ships.destrojer
@@ -41,7 +41,7 @@ class Battlefield {
             if(addShip(kolumna: kolumna, wiersz: wiersz, position: randomOrientation, shipType: .Destrojer, player: .PlayerTwo)){
                 i += 1;
             }
-            print("\(i). Destrojer dodany!")
+            //print("\(i). Destrojer dodany!")
         }
         i=0;
         let krazownik = ships.krazownik
@@ -52,7 +52,7 @@ class Battlefield {
             if(addShip(kolumna: kolumna, wiersz: wiersz, position: randomOrientation, shipType: .Krazownik, player: .PlayerTwo) == false){
                 i += 1;
             }
-            print("\(i). Krazownik dodany!")
+            //print("\(i). Krazownik dodany!")
         }
         i=0;
         let niszczyciel = ships.niszczyciel;
@@ -63,7 +63,7 @@ class Battlefield {
             if(addShip(kolumna: kolumna, wiersz: wiersz, position: randomOrientation, shipType: .BS, player: .PlayerTwo)){
                 i += 1;
             }
-            print("\(i). Niszczyciel dodany!")
+            //print("\(i). Niszczyciel dodany!")
         }
         ships.restertCountOfShips();
     }
@@ -96,7 +96,7 @@ class Battlefield {
         return self.player2BattleField;
     }
     
-    func updateFiled(player: PlayerType, kolumna: Int, wiersz: Int){
+    func updateField(player: PlayerType, kolumna: Int, wiersz: Int){
         if(player == PlayerType.PlayerOne){
             player1BattleField[kolumna][wiersz] = true;
         } else {
@@ -109,7 +109,7 @@ class Battlefield {
         switch shipType {
         case Ship.Fregata:
             if(ships.fregate != 0 && battlefield[kolumna][wiersz] == false){
-                updateFiled(player: player, kolumna: kolumna, wiersz: wiersz);
+                updateField(player: player, kolumna: kolumna, wiersz: wiersz);
                 ships.fregate -= 1;
                 return true;
             }
@@ -119,9 +119,9 @@ class Battlefield {
                 let flaga = checkPlaces(kolumna: kolumna, wiersz: wiersz, wielkosc_statku: 1, position: position, bf: battlefield)
                 for item in 0...1{
                     if(position == false && flaga) {
-                        updateFiled(player: player, kolumna: kolumna + item, wiersz: wiersz);
+                        updateField(player: player, kolumna: kolumna + item, wiersz: wiersz);
                     } else if (position == true && flaga) {
-                        updateFiled(player: player, kolumna: kolumna, wiersz: wiersz + item);
+                        updateField(player: player, kolumna: kolumna, wiersz: wiersz + item);
                     } else {
                         return false;
                     }
@@ -135,9 +135,9 @@ class Battlefield {
                 let flaga = checkPlaces(kolumna: kolumna, wiersz: wiersz, wielkosc_statku: 2, position: position, bf: battlefield)
                 for item in 0...2{
                     if(position == false && flaga) {
-                        updateFiled(player: player, kolumna: kolumna + item, wiersz: wiersz);
+                        updateField(player: player, kolumna: kolumna + item, wiersz: wiersz);
                     } else if (position == true && flaga) {
-                        updateFiled(player: player, kolumna: kolumna, wiersz: wiersz + item);
+                        updateField(player: player, kolumna: kolumna, wiersz: wiersz + item);
                     } else {
                         return false;
                     }
@@ -148,12 +148,12 @@ class Battlefield {
             return false;
         case Ship.BS:
             if(ships.niszczyciel != 0 && battlefield[kolumna][wiersz] == false){
-                let flaga = checkPlaces(kolumna: kolumna, wiersz: wiersz, wielkosc_statku: 2, position: position, bf: battlefield)
+                let flaga = checkPlaces(kolumna: kolumna, wiersz: wiersz, wielkosc_statku: 3, position: position, bf: battlefield)
                 for item in 0...3{
                     if(position == false && flaga) {
-                        updateFiled(player: player, kolumna: kolumna + item, wiersz: wiersz);
+                        updateField(player: player, kolumna: kolumna + item, wiersz: wiersz);
                     } else if (position == true && flaga) {
-                        updateFiled(player: player, kolumna: kolumna, wiersz: wiersz + item);
+                        updateField(player: player, kolumna: kolumna, wiersz: wiersz + item);
                     } else {
                         return false;
                     }
