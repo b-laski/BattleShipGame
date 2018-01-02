@@ -10,6 +10,11 @@ import Cocoa
 
 class GameWindowsController: NSViewController, NSWindowDelegate {
     
+    let button: NSButton = {
+        var button: NSButton = NSButton(frame: NSRect(x: 20, y: 20, width: 30, height: 30))
+        return button;
+    }();
+    
     var game: Game? = nil;
     var position: Bool = true;
     var player1Field: [NSButton] = [];

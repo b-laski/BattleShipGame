@@ -17,6 +17,7 @@
 		C233588A1FE023C3005C3DAF /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23358891FE023C3005C3DAF /* Ship.swift */; };
 		C2411E201FD6FB38006085CA /* SettingsControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2411E1F1FD6FB38006085CA /* SettingsControllers.swift */; };
 		C25A41A11FE1EB2000466E06 /* PlayerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25A41A01FE1EB2000466E06 /* PlayerType.swift */; };
+		C2C454F71FF00DF3000A6928 /* GameWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C454F61FF00DF3000A6928 /* GameWindowViewController.swift */; };
 		C2D6B8611FE1B764004B1FE6 /* Ships.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D6B8601FE1B764004B1FE6 /* Ships.swift */; };
 		EEC8D3421FCF36980076EB4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC8D3411FCF36980076EB4E /* AppDelegate.swift */; };
 		EEC8D3441FCF36980076EB4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC8D3431FCF36980076EB4E /* ViewController.swift */; };
@@ -57,6 +58,7 @@
 		C23358891FE023C3005C3DAF /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
 		C2411E1F1FD6FB38006085CA /* SettingsControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsControllers.swift; sourceTree = "<group>"; };
 		C25A41A01FE1EB2000466E06 /* PlayerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerType.swift; sourceTree = "<group>"; };
+		C2C454F61FF00DF3000A6928 /* GameWindowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWindowViewController.swift; sourceTree = "<group>"; };
 		C2D6B8601FE1B764004B1FE6 /* Ships.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ships.swift; sourceTree = "<group>"; };
 		EEC8D33E1FCF36980076EB4E /* BattleShip Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BattleShip Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC8D3411FCF36980076EB4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -154,11 +156,11 @@
 		EEC8D3401FCF36980076EB4E /* BattleShip Game */ = {
 			isa = PBXGroup;
 			children = (
+				EEC8D36D1FCF375B0076EB4E /* Image */,
 				C20808E71FDDC5F2002C6CEA /* Enums */,
 				C20EA8E21FDD7CDD00D8B3FF /* Helpers */,
 				C2411E1E1FD6F649006085CA /* Game */,
 				EEC8D3701FCF382D0076EB4E /* Controllers */,
-				EEC8D36D1FCF375B0076EB4E /* Image */,
 				EEC8D3411FCF36980076EB4E /* AppDelegate.swift */,
 				EEC8D3431FCF36980076EB4E /* ViewController.swift */,
 				EEC8D3451FCF36980076EB4E /* Assets.xcassets */,
@@ -202,6 +204,7 @@
 				EEC8D3771FCF3A6F0076EB4E /* GameWindowsController.swift */,
 				C2411E1F1FD6FB38006085CA /* SettingsControllers.swift */,
 				C20EA8ED1FDDA23F00D8B3FF /* MainWindowController.swift */,
+				C2C454F61FF00DF3000A6928 /* GameWindowViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				EEC8D3761FCF38760076EB4E /* ExitControllers.swift in Sources */,
 				C20808EB1FDDDE5E002C6CEA /* Field.swift in Sources */,
 				EEC8D3791FCF3A6F0076EB4E /* GameWindowsController.swift in Sources */,
+				C2C454F71FF00DF3000A6928 /* GameWindowViewController.swift in Sources */,
 				C25A41A11FE1EB2000466E06 /* PlayerType.swift in Sources */,
 				C2411E201FD6FB38006085CA /* SettingsControllers.swift in Sources */,
 				C20808E41FDDB5D4002C6CEA /* Player.swift in Sources */,

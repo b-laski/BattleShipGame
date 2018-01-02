@@ -159,14 +159,14 @@ Gw
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QR3-54-MJV">
-                                <rect key="frame" x="180" y="117" width="121" height="32"/>
+                                <rect key="frame" x="179" y="117" width="121" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="New Game" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ndy-Rt-pKj">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <segue destination="M95-Qi-hXW" kind="show" id="kzL-id-aYS"/>
+                                    <segue destination="M95-Qi-hXW" kind="show" id="zLB-BU-Rl1"/>
                                 </connections>
                             </button>
                         </subviews>

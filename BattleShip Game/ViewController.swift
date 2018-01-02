@@ -12,7 +12,6 @@ class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.window?.center();
     }
 
     override var representedObject: Any? {
