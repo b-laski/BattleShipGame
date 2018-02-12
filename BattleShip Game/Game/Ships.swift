@@ -6,8 +6,6 @@
 //  Copyright © 2017 Bartłomiej Łaski. All rights reserved.
 //
 
-import Foundation
-
 class Ships {
     
     var fregate: Int;

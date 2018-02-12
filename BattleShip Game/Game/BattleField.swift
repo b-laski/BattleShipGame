@@ -12,6 +12,7 @@ class Battlefield {
 
     var player1BattleField: [[Bool]] = [];
     var player2BattleField: [[Bool]] = [];
+    var listOfShips: [Shipp] = [];
     var ships: Ships;
     
     init(ships: Ships) {
@@ -109,23 +110,30 @@ class Battlefield {
         switch shipType {
         case Ship.Fregata:
             if(ships.fregate != 0 && battlefield[kolumna][wiersz] == false){
+                let fregate: Fregate = Fregate()
+                fregate.AddPoint(x: kolumna, y: wiersz)
                 updateField(player: player, kolumna: kolumna, wiersz: wiersz);
                 ships.fregate -= 1;
+                listOfShips.append(fregate)
                 return true;
             }
             return false;
         case Ship.Destrojer:
             if(ships.destrojer != 0 && battlefield[kolumna][wiersz] == false){
                 let flaga = checkPlaces(kolumna: kolumna, wiersz: wiersz, wielkosc_statku: 1, position: position, bf: battlefield)
+                let destro: Destrojer = Destrojer()
                 for item in 0...1{
                     if(position == false && flaga) {
+                        destro.AddPoint(x: kolumna + item, y: wiersz)
                         updateField(player: player, kolumna: kolumna + item, wiersz: wiersz);
                     } else if (position == true && flaga) {
+                        destro.AddPoint(x: kolumna, y: wiersz + item)
                         updateField(player: player, kolumna: kolumna, wiersz: wiersz + item);
                     } else {
                         return false;
                     }
                 }
+                listOfShips.append(destro);
                 ships.destrojer -= 1;
                 return true;
             }
@@ -133,15 +141,19 @@ class Battlefield {
         case Ship.Krazownik:
             if(ships.krazownik != 0 && battlefield[kolumna][wiersz] == false){
                 let flaga = checkPlaces(kolumna: kolumna, wiersz: wiersz, wielkosc_statku: 2, position: position, bf: battlefield)
+                let krazo: Krazownik = Krazownik()
                 for item in 0...2{
                     if(position == false && flaga) {
+                        krazo.AddPoint(x: kolumna + item, y: wiersz)
                         updateField(player: player, kolumna: kolumna + item, wiersz: wiersz);
                     } else if (position == true && flaga) {
+                        krazo.AddPoint(x: kolumna, y: wiersz + item)
                         updateField(player: player, kolumna: kolumna, wiersz: wiersz + item);
                     } else {
                         return false;
                     }
                 }
+                listOfShips.append(krazo)
                 ships.krazownik -= 1;
                 return true;
             }
@@ -149,15 +161,19 @@ class Battlefield {
         case Ship.BS:
             if(ships.niszczyciel != 0 && battlefield[kolumna][wiersz] == false){
                 let flaga = checkPlaces(kolumna: kolumna, wiersz: wiersz, wielkosc_statku: 3, position: position, bf: battlefield)
+                let bs: BS = BS()
                 for item in 0...3{
                     if(position == false && flaga) {
+                        bs.AddPoint(x: kolumna + item, y: wiersz)
                         updateField(player: player, kolumna: kolumna + item, wiersz: wiersz);
                     } else if (position == true && flaga) {
+                        bs.AddPoint(x: kolumna, y: wiersz + item)
                         updateField(player: player, kolumna: kolumna, wiersz: wiersz + item);
                     } else {
                         return false;
                     }
                 }
+                listOfShips.append(bs)
                 ships.niszczyciel -= 1;
                 return true;
             }
@@ -168,6 +184,9 @@ class Battlefield {
     func shootToShip(kolumna: Int, wiersz: Int, playerType: PlayerType) -> Bool{
         if(playerType == PlayerType.PlayerOne){
             if(self.player2BattleField[kolumna][wiersz] == true){
+                for item in listOfShips{
+                    let _: Bool = item.Find(x: kolumna, y: wiersz)
+                }
                 return true
             }
             return false;

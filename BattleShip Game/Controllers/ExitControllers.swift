@@ -9,7 +9,7 @@
 import Cocoa
 
 class ExitControllers: NSViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.

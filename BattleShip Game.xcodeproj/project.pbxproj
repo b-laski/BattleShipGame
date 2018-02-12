@@ -17,6 +17,8 @@
 		C233588A1FE023C3005C3DAF /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23358891FE023C3005C3DAF /* Ship.swift */; };
 		C2411E201FD6FB38006085CA /* SettingsControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2411E1F1FD6FB38006085CA /* SettingsControllers.swift */; };
 		C25A41A11FE1EB2000466E06 /* PlayerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25A41A01FE1EB2000466E06 /* PlayerType.swift */; };
+		C2ADF95D2030B37A006D463F /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ADF95C2030B37A006D463F /* Point.swift */; };
+		C2ADF9602030B460006D463F /* Shipp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ADF95F2030B460006D463F /* Shipp.swift */; };
 		C2C454F71FF00DF3000A6928 /* GameWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C454F61FF00DF3000A6928 /* GameWindowViewController.swift */; };
 		C2D6B8611FE1B764004B1FE6 /* Ships.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D6B8601FE1B764004B1FE6 /* Ships.swift */; };
 		EEC8D3421FCF36980076EB4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC8D3411FCF36980076EB4E /* AppDelegate.swift */; };
@@ -58,6 +60,8 @@
 		C23358891FE023C3005C3DAF /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
 		C2411E1F1FD6FB38006085CA /* SettingsControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsControllers.swift; sourceTree = "<group>"; };
 		C25A41A01FE1EB2000466E06 /* PlayerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerType.swift; sourceTree = "<group>"; };
+		C2ADF95C2030B37A006D463F /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		C2ADF95F2030B460006D463F /* Shipp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shipp.swift; sourceTree = "<group>"; };
 		C2C454F61FF00DF3000A6928 /* GameWindowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWindowViewController.swift; sourceTree = "<group>"; };
 		C2D6B8601FE1B764004B1FE6 /* Ships.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ships.swift; sourceTree = "<group>"; };
 		EEC8D33E1FCF36980076EB4E /* BattleShip Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BattleShip Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,12 +129,22 @@
 		C2411E1E1FD6F649006085CA /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				C2ADF95E2030B450006D463F /* Ships */,
 				C20808DF1FDDB34B002C6CEA /* Game.swift */,
 				C20808E11FDDB5BE002C6CEA /* BattleField.swift */,
 				C20808E31FDDB5D4002C6CEA /* Player.swift */,
 				C2D6B8601FE1B764004B1FE6 /* Ships.swift */,
+				C2ADF95C2030B37A006D463F /* Point.swift */,
 			);
 			path = Game;
+			sourceTree = "<group>";
+		};
+		C2ADF95E2030B450006D463F /* Ships */ = {
+			isa = PBXGroup;
+			children = (
+				C2ADF95F2030B460006D463F /* Shipp.swift */,
+			);
+			path = Ships;
 			sourceTree = "<group>";
 		};
 		EEC8D3351FCF36980076EB4E = {
@@ -354,7 +368,9 @@
 				C20808EB1FDDDE5E002C6CEA /* Field.swift in Sources */,
 				EEC8D3791FCF3A6F0076EB4E /* GameWindowsController.swift in Sources */,
 				C2C454F71FF00DF3000A6928 /* GameWindowViewController.swift in Sources */,
+				C2ADF95D2030B37A006D463F /* Point.swift in Sources */,
 				C25A41A11FE1EB2000466E06 /* PlayerType.swift in Sources */,
+				C2ADF9602030B460006D463F /* Shipp.swift in Sources */,
 				C2411E201FD6FB38006085CA /* SettingsControllers.swift in Sources */,
 				C20808E41FDDB5D4002C6CEA /* Player.swift in Sources */,
 				C20808E01FDDB34B002C6CEA /* Game.swift in Sources */,

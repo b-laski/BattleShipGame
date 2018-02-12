@@ -8,12 +8,7 @@
 
 import Cocoa
 
-class GameWindowsController: NSViewController, NSWindowDelegate {
-    
-    let button: NSButton = {
-        var button: NSButton = NSButton(frame: NSRect(x: 20, y: 20, width: 30, height: 30))
-        return button;
-    }();
+class GameWindowsController: NSViewController {
     
     var game: Game? = nil;
     var position: Bool = true;
@@ -40,7 +35,7 @@ class GameWindowsController: NSViewController, NSWindowDelegate {
             height = height + 20
         }
         
-        wight = (wight*2) + 40;
+        wight = (wight*2);
         height = height + 150;
         
         do {
@@ -52,6 +47,7 @@ class GameWindowsController: NSViewController, NSWindowDelegate {
                 
                 self.view.frame.size.width = CGFloat(wight);
                 self.view.frame.size.height = CGFloat(height);
+            
                 
                 GenerateButtons(Count: UserDefaults.standard.integer(forKey: "FieldSize"), _x: 20, _y: Int(self.view.frame.size.height) - 40, field: Field.Player1)
                 GenerateButtons(Count: UserDefaults.standard.integer(forKey: "FieldSize"), _x: (Int(self.view.frame.size.width) / 2) + 20, _y: Int(self.view.frame.size.height) - 40, field: Field.Player2);
@@ -231,8 +227,6 @@ class GameWindowsController: NSViewController, NSWindowDelegate {
         }
     }
     
-
-    
     @objc func selectPosition(button: NSButton){
         if(game?.orientation == true){
             button.title = "Vertical";
@@ -265,4 +259,5 @@ class GameWindowsController: NSViewController, NSWindowDelegate {
             return
         }
     }
+    
 }
